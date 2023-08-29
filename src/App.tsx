@@ -2269,7 +2269,7 @@ function App() {
                         className="w-100"
                         src="//assets.unipegaso.it/images/cdl/425x150/economia-aziendale.jpg"
                         lazy="loading"
-                      />{" "}
+                      />
                       <div className="card-logo">
                         <img
                           data-src="//assets.unipegaso.it/images/logo/logo-pegaso.gif"
