@@ -2135,14 +2135,14 @@ function App() {
                       <img
                         data-src="//assets.unipegaso.it/images/postlaurea/425x150/area-scuola.jpg"
                         className="w-100"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        src="https://assets.unipegaso.it/images/postlaurea/425x150/area-scuola.jpg"
                         lazy="loading"
                       />{" "}
                       <div className="card-logo">
                         <img
                           data-src="//assets.unipegaso.it/images/logo/logo-pegaso.gif"
                           height="30px"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          src="//assets.unipegaso.it/images/logo/logo-pegaso.gif"
                           lazy="loading"
                         />
                       </div>{" "}
@@ -2201,14 +2201,14 @@ function App() {
                       <img
                         data-src="//assets.unipegaso.it/images/cdl/425x150/informatica-per-le-aziende-digitali.jpg"
                         className="w-100"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        src="//assets.unipegaso.it/images/cdl/425x150/informatica-per-le-aziende-digitali.jpg"
                         lazy="loading"
                       />{" "}
                       <div className="card-logo">
                         <img
                           data-src="//assets.unipegaso.it/images/logo/logo-pegaso.gif"
                           height="30px"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          src="//assets.unipegaso.it/images/logo/logo-pegaso.gif"
                           lazy="loading"
                         />
                       </div>{" "}
@@ -2267,7 +2267,7 @@ function App() {
                       <img
                         data-src="//assets.unipegaso.it/images/cdl/425x150/economia-aziendale.jpg"
                         className="w-100"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        src="//assets.unipegaso.it/images/cdl/425x150/economia-aziendale.jpg"
                         lazy="loading"
                       />{" "}
                       <div className="card-logo">
