@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import "./Page4.css";
 import { BASE_URL } from './utils/url';
 function UploadImage({filename, setFilename}) {
   const [uploadMessage, setUploadMessage] = useState('');
@@ -40,46 +41,50 @@ function UploadImage({filename, setFilename}) {
 
   return (
     
-    <div>
-         <h1>Seleziona Opzioni</h1>
-      <label>
-        <input
-          type="checkbox"
-          value="Comunicazione"
-         
-          onClick={handleCheckboxChange}
-        />
-       Comunicazione e Multimedialità
-      </label>
-      <br />
-      <label>
-        <input
-          type="checkbox"
-          value="EducazionePrimaria"
-        /*   checked={selectedOptions.includes('Ingegneria')}
-          onChange={handleCheckboxChange} */
-          onClick={handleCheckboxChange}
-        />
-        Scienza dell'educazione primaria
-      </label>
-      <br />
-      <label>
-        <input
-          type="checkbox"
-          value="Economia"
-         /*  checked={selectedOptions.includes('Economia')} */
-          onClick={handleCheckboxChange}
-        />
-        Economia
-      </label>
-      {/* <br />
-      <p>Opzioni selezionate: {selectedOptions.join(', ')}</p> */}
-   
-      <h1>Image Upload</h1>
-      <input type="file" accept="image/*" onChange={handleFileChange} />
-      <button onClick={handleImageUpload}>Upload</button>
-      {uploadMessage && <p>{uploadMessage}</p>}
-    </div>
+    <div className="container">
+    <h1 className="section-title">Seleziona Opzioni</h1>
+    <label className="checkbox-label">
+      <input
+        type="checkbox"
+        className="checkbox"
+        value="Comunicazione"
+        onClick={handleCheckboxChange}
+      />
+      Comunicazione e Multimedialità
+    </label>
+    <br />
+    <label className="checkbox-label">
+      <input
+        type="checkbox"
+        className="checkbox"
+        value="EducazionePrimaria"
+        onClick={handleCheckboxChange}
+      />
+      Scienza dell'educazione primaria
+    </label>
+    <br />
+    <label className="checkbox-label">
+      <input
+        type="checkbox"
+        className="checkbox"
+        value="Economia"
+        onClick={handleCheckboxChange}
+      />
+      Economia
+    </label>
+
+    <h1 className="section-title">Carica un'immagine</h1>
+    <input
+      type="file"
+      className="file-input"
+      accept="image/*"
+      onChange={handleFileChange}
+    />
+    <button className="upload-button" onClick={handleImageUpload}>
+      Carica
+    </button>
+    {uploadMessage && <p className="upload-message">{uploadMessage}</p>}
+  </div>
   );
 }
 
