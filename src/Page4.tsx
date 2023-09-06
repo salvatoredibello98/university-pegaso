@@ -2,10 +2,11 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import { BASE_URL } from './utils/url';
 function UploadImage({filename, setFilename}) {
   const [uploadMessage, setUploadMessage] = useState('');
   const [selectedFile, setSelectedFile] = useState(null);
+  const [checkboxChange, setCheckboxFile] = useState('');
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -14,10 +15,10 @@ function UploadImage({filename, setFilename}) {
   const handleImageUpload = async () => {
     try {
       const formData = new FormData();
-      formData.append('image', selectedFile);
-      setFilename(selectedFile.name);
-
-      const response = await axios.post('http://localhost:3000/upload', formData, {
+      const newFilename = checkboxChange+'.png'; // Set your desired new filename here
+      formData.append('image', selectedFile, newFilename);
+      setFilename(newFilename);
+      const response = await axios.post(`${BASE_URL}/upload`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -31,6 +32,11 @@ function UploadImage({filename, setFilename}) {
       setUploadMessage('Error uploading image'); // Display an error message
     }
   };
+  const handleCheckboxChange = (event) => {
+    setCheckboxFile(event.target.value);
+    console.log('evento', event.target.value);
+
+  };
 
   return (
     
@@ -39,29 +45,30 @@ function UploadImage({filename, setFilename}) {
       <label>
         <input
           type="checkbox"
-          value="Giurisprudenza"
-         /*  checked={selectedOptions.includes('Giurisprudenza')}
-          onChange={handleCheckboxChange} */
+          value="Comunicazione"
+         
+          onClick={handleCheckboxChange}
         />
-        Giurisprudenza
+       Comunicazione e Multimedialità
       </label>
       <br />
       <label>
         <input
           type="checkbox"
-          value="Ingegneria"
+          value="EducazionePrimaria"
         /*   checked={selectedOptions.includes('Ingegneria')}
           onChange={handleCheckboxChange} */
+          onClick={handleCheckboxChange}
         />
-        Ingegneria
+        Scienza dell'educazione primaria
       </label>
       <br />
       <label>
         <input
           type="checkbox"
           value="Economia"
-          /* checked={selectedOptions.includes('Economia')}
-          onChange={handleCheckboxChange} */
+         /*  checked={selectedOptions.includes('Economia')} */
+          onClick={handleCheckboxChange}
         />
         Economia
       </label>

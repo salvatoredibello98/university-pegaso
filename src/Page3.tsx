@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import useCookies from './hooks/useCookies';
+import { BASE_URL } from './utils/url';
 
 function Page3({filename, setFilename}) {
   const [imageURL, setImageURL] = useState('');
@@ -49,7 +50,9 @@ function Page3({filename, setFilename}) {
         onChange={handleFilenameChange}
       />
       {imageURL && <img src={imageURL} alt="Server Image" />}
+      <img src={`${BASE_URL}/image/Ingegneria.png`} alt="" />
     </div>
+
   );
 }
 
