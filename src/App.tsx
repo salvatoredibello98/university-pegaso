@@ -1,10 +1,11 @@
 // @ts-nocheck
 import { Routes, Route } from "react-router-dom";
-import Page from "./Page";
-import Page2 from "./Page2";
-import Page3 from "./Page3";
-import Page4 from "./Page4";
-import { useState } from "react";
+import { lazy, useState } from "react";
+const Page = lazy(() => import("./Page.tsx"));
+const Page2 = lazy(() => import("./Page2.tsx"));
+const Page3 = lazy(() => import("./Page3.tsx"));
+const Page4 = lazy(() => import("./Page4.tsx"));
+
 import useCookies from "./hooks/useCookies";
 function App() {
   const { cookieValue, setCookie } = useCookies("filename");

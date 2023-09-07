@@ -3,7 +3,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { BASE_URL } from "./utils/url";
+ import { BASE_URL } from "./utils/url"; 
 
 function Page() {
   const [count, setCount] = useState(0);
@@ -2237,7 +2237,7 @@ function Page() {
                             <img
                               data-src="//assets.unipegaso.it/images/postlaurea/425x150/area-scuola.jpg"
                               className="w-100"
-                              src={`${BASE_URL}/image/Economia.png`}
+                              src="https://assets.unipegaso.it/images/postlaurea/425x150/area-scuola.jpg"
                               lazy="loading"
                             />{" "}
                             <div className="card-logo">
@@ -2259,7 +2259,7 @@ function Page() {
                           </div>{" "}
                           <div className="p-4">
                             <h4 className="mb-3">
-                              RELAZIONI INTERNAZIONALI PER LO SVILUPPO ECONOMICO
+                              Master Trans-Skills per la salute ed il benessere
                             </h4>{" "}
                             <div className="d-flex bg-primary-5 body-14-regular p-2 justify-content-between mb-3">
                               <div className="w-50">
@@ -2301,9 +2301,9 @@ function Page() {
                         <div className="card-course">
                           <div className="card-course-image">
                             <img
-                              data-src={`${BASE_URL}/image/EducazionePrimaria.png`}
+                              data-src="//assets.unipegaso.it/images/cdl/425x150/informatica-per-le-aziende-digitali.jpg"
                               className="w-100"
-                              src={`${BASE_URL}/image/EducazionePrimaria.png`}
+                              src="//assets.unipegaso.it/images/cdl/425x150/informatica-per-le-aziende-digitali.jpg"
                               lazy="loading"
                             />{" "}
                             <div className="card-logo">
@@ -2319,13 +2319,14 @@ function Page() {
                                 L-31
                               </span>{" "}
                               <span className="card-label text-uppercase">
-                                Scienze dell'educazione e della formazione
+                                Informatica
                               </span>
                             </div>
                           </div>{" "}
                           <div className="p-4">
                             <h4 className="mb-3">
-                            SCIENZE DELL'EDUCAZIONE E DELLA FORMAZIONE
+                              Laurea Triennale in Informatica per le Aziende
+                              Digitali
                             </h4>{" "}
                             <div className="d-flex bg-primary-5 body-14-regular p-2 justify-content-between mb-3">
                               <div className="w-50">
@@ -2342,7 +2343,7 @@ function Page() {
                                 <span className="d-block mb-2">
                                   <i className="fa-solid fa-euro-sign me-1" />A
                                   partire da € 1.600
-                                </span>
+                                </span>{" "}
                                 <span className="d-block">
                                   <i className="fa-solid fa-check me-1" />
                                   Iscrizioni aperte
@@ -2367,9 +2368,9 @@ function Page() {
                         <div className="card-course">
                           <div className="card-course-image">
                             <img
-                              data-src={`${BASE_URL}/image/Comunicazione.png`}
+                              data-src="//assets.unipegaso.it/images/cdl/425x150/economia-aziendale.jpg"
                               className="w-100"
-                              src={`${BASE_URL}/image/Comunicazione.png`}
+                              src="//assets.unipegaso.it/images/cdl/425x150/economia-aziendale.jpg"
                               lazy="loading"
                             />
                             <div className="card-logo">
@@ -2385,13 +2386,13 @@ function Page() {
                                 L-18
                               </span>{" "}
                               <span className="card-label text-uppercase">
-                                Comunicazione e multimedialità
+                                Economia
                               </span>
                             </div>
                           </div>{" "}
                           <div className="p-4">
                             <h4 className="mb-3">
-                            COMUNICAZIONE E MULTIMEDIALITA'
+                              Laurea Triennale in Economia Aziendale
                             </h4>{" "}
                             <div className="d-flex bg-primary-5 body-14-regular p-2 justify-content-between mb-3">
                               <div className="w-50">
