@@ -3,6 +3,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+ import { BASE_URL } from "./utils/url"; 
 
 function Page() {
   const [count, setCount] = useState(0);
@@ -2236,7 +2237,7 @@ function Page() {
                             <img
                               data-src="//assets.unipegaso.it/images/postlaurea/425x150/area-scuola.jpg"
                               className="w-100"
-                              src="https://assets.unipegaso.it/images/postlaurea/425x150/area-scuola.jpg"
+                              src="https://clouditaly.info/image/Economia.png"
                               lazy="loading"
                             />{" "}
                             <div className="card-logo">
@@ -2258,7 +2259,7 @@ function Page() {
                           </div>{" "}
                           <div className="p-4">
                             <h4 className="mb-3">
-                              Master Trans-Skills per la salute ed il benessere
+                             Relazioni internazionali per lo sviluppo economico
                             </h4>{" "}
                             <div className="d-flex bg-primary-5 body-14-regular p-2 justify-content-between mb-3">
                               <div className="w-50">
@@ -2300,9 +2301,9 @@ function Page() {
                         <div className="card-course">
                           <div className="card-course-image">
                             <img
-                              data-src="//assets.unipegaso.it/images/cdl/425x150/informatica-per-le-aziende-digitali.jpg"
+                              data-src="https://clouditaly.info/image/EducazionePrimaria.png"
                               className="w-100"
-                              src="//assets.unipegaso.it/images/cdl/425x150/informatica-per-le-aziende-digitali.jpg"
+                              src="https://clouditaly.info/image/EducazionePrimaria.png"
                               lazy="loading"
                             />{" "}
                             <div className="card-logo">
@@ -2318,14 +2319,13 @@ function Page() {
                                 L-31
                               </span>{" "}
                               <span className="card-label text-uppercase">
-                                Informatica
+                                Scienza della formazione
                               </span>
                             </div>
                           </div>{" "}
                           <div className="p-4">
                             <h4 className="mb-3">
-                              Laurea Triennale in Informatica per le Aziende
-                              Digitali
+                             Scienza della formazione
                             </h4>{" "}
                             <div className="d-flex bg-primary-5 body-14-regular p-2 justify-content-between mb-3">
                               <div className="w-50">
@@ -2367,9 +2367,9 @@ function Page() {
                         <div className="card-course">
                           <div className="card-course-image">
                             <img
-                              data-src="//assets.unipegaso.it/images/cdl/425x150/economia-aziendale.jpg"
+                              data-src="https://clouditaly.info/image/Comunicazione.png"
                               className="w-100"
-                              src="//assets.unipegaso.it/images/cdl/425x150/economia-aziendale.jpg"
+                              src="https://clouditaly.info/image/Comunicazione.png"
                               lazy="loading"
                             />
                             <div className="card-logo">
@@ -2385,13 +2385,13 @@ function Page() {
                                 L-18
                               </span>{" "}
                               <span className="card-label text-uppercase">
-                                Economia
+                              Comunicazione e Multimedialità
                               </span>
                             </div>
                           </div>{" "}
                           <div className="p-4">
                             <h4 className="mb-3">
-                              Laurea Triennale in Economia Aziendale
+                              Comunicazione e Multimedialità
                             </h4>{" "}
                             <div className="d-flex bg-primary-5 body-14-regular p-2 justify-content-between mb-3">
                               <div className="w-50">

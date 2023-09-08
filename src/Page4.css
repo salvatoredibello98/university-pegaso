@@ -1,0 +1,60 @@
+/* Stili per il componente App */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007BFF;
+  }
+  
+  .checkbox-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .checkbox {
+    margin-right: 10px;
+  }
+  
+  .file-input {
+    margin-top: 10px;
+  }
+  
+  .upload-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .upload-message {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+  }
+  
