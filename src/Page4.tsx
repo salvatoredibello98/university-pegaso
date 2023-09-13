@@ -39,8 +39,7 @@ function UploadImage({filename, setFilename}) {
 
   };
 
-  return (
-    
+  return (    
     <div className="container">
     <h1 className="section-title">Seleziona Opzioni</h1>
     <label className="checkbox-label">
